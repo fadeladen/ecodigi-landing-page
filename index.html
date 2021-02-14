@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecodigi</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+
+    <style>
+        /* Poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @media (min-width: 1536px) {
+            #big-image {
+                max-width: 32rem;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-gray-900 h-16 flex items-center text-gray-100">
+        <div class="container flex w-11/12 md:w-10/12 mx-auto justify-between">
+            <div class="flex items-center">
+                <a class="inline-block" href="/">
+                    <img class="w-24" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <ul id="nav" class="hidden lg:space-x-16 space-x-6 md:flex items-center text-sm font-medium">
+                <li class="hover:text-gray-600">
+                    <div class="dropdown hover:text-gray-600 relative inline-block">
+                        <div class="flex p-3 item-center">
+                            <div class="flex mr-3 items-center">
+                                <button class="dropbtn font-medium cursor-default">Ecodigi</button>
+                            </div>
+                            <img class="w-3 h-3 mt-1" src="img/angle-arrow-down.png" alt="">
+                        </div>
+                        <div class="dropdown-content hidden z-50 bg-white w-40 shadow px-3 py-1 absolute">
+                            <div class="my-3">
+                                <a class="text-gray-900 hover:text-gray-400" href="#">About us</a>
+                            </div>
+                            <div class="my-3">
+                                <a class="text-gray-900 hover:text-gray-400" href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="hover:text-gray-600">
+                    <a class="p-3" href="#">Events</a>
+                </li>
+                <li class="hover:text-gray-600">
+                    <a class="p-3" href="#">News</a>
+                </li>
+                <li class="hover:text-gray-600">
+                    <a class="p-3" href="#">Members</a>
+                </li>
+            </ul>
+            <button id="hamburger-button" class="md:hidden block focus:outline-none"><img
+                    class="h-10 rounded-md hover:bg-gray-800 p-2 transition duration-300 ease-in-out"
+                    src="img/hamburger-menu.svg" alt="" srcset="">
+            </button>
+        </div>
+    </nav>
+    <div id="nav-mobile" class="md:hidden hidden w-full justify-center text-gray-200">
+        <ul class="w-full flex flex-col h-96 bg-gray-900 justify-around pl-44 text-lg">
+            <li class="hover:text-gray-600 ">
+                <div class="dropdown pl-1 hover:text-gray-600 relative">
+                    <div class="flex p-3 item-center">
+                        <div class="flex mr-3 items-center">
+                            <button class="dropbtn cursor-default focus:outline-none">Ecodigi</button>
+                        </div>
+                        <img class="w-3 h-3 mt-2" src="img/angle-arrow-down.png" alt="">
+                    </div>
+                    <div class="dropdown-content hidden bg-white w-40 shadow px-3 py-1 absolute">
+                        <div class="my-3">
+                            <a class="text-gray-900 hover:text-gray-400" href="#">About us</a>
+                        </div>
+                        <div class="my-3">
+                            <a class="text-gray-900 hover:text-gray-400" href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hover:text-gray-600 ">
+                <a class="p-4" href="#">Events</a>
+            </li>
+            <li class="hover:text-gray-600 ">
+                <a class="p-4" href="#">News</a>
+            </li>
+            <li class="hover:text-gray-600 ">
+                <a class="p-4" href="#">Members</a>
+            </li>
+        </ul>
+    </div>
+
+    <header
+        class="container relative w-11/12 md:w-10/12 mx-auto mt-8 mb-10 md:my-12 md:flex justify-between py-6 md:py-12 bg-gray-200 rounded-xl h-auto">
+        <div data-aos="fade-right" data-aos-duration="500"
+            class="text-gray-900 mb-4 md:mb-0 w-full  md:w-6/12 p-4 md:pl-10">
+            <p class="text-5xl w-11/12 mx-auto md:w-full lg:text-7xl mb-6 md:mb-12 font-bold">Economy Digital</p>
+            <p class="md:w-10/12 w-11/12 mx-auto md:mx-0 font-medium">We’re taking you to explore the world of economy
+                in one touch! <br> We Focus on: talent, training, and education !</p>
+        </div>
+        <div class="flex justify-center items-center w-11/12 mx-auto md:w-6/12">
+            <img data-aos="fade-left" data-aos-duration="500" id="big-image"
+                class="lg:w-7/12 lg:pl-10 lg:absolute top-5 right-0" src="img/undraw3.svg" alt="">
+        </div>
+    </header>
+
+    <section class="container w-10/12 pt-12 pb-20 mx-auto flex flex-col md:flex-row justify-between">
+        <div class="w-full md:w-2/12">
+            <h3 class="md:text-5xl ml-3 -mb-8 text-3xl md:ml-0 font-bold text-gray-800 ">Events</h3>
+        </div>
+        <div class="w-full md:w-10/12">
+            <div class="flex justify-end md:-mr-5 "><a
+                    class="md:px-4 md:py-2 px-3 py-2 mr-2 md:mr-0 rounded-2xl mb-6 hover:bg-blue-600 text-white text-xs md:text-sm bg-blue-500"
+                    href="/events">Lihat semua</a>
+            </div>
+            <div class="flex mt-0 md:mt-6 justify-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="h-80 w-72 bg-white shadow-lg">
+                        <img class="object-cover w-full h-48" src="img/event1.jpg" alt="">
+                        <div class="px-4 h-16 max-h-16 overflow-hidden py-3">
+                            <h3 class="font-semibold hover:underline text-gray-800">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </h3>
+                        </div>
+                        <div class="flex items-center mt-7 px-4 justify-between">
+                            <small>5 October, 2021</small>
+                            <div class="flex justify-end">
+                                <a class="px-2 py-1 hover:bg-gray-800 bg-gray-700 text-white text-xs rounded-xl"
+                                    href="#">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-80 w-72 bg-white shadow-lg">
+                        <img class="object-cover w-full h-48" src="img/event2.jpg" alt="">
+                        <div class="px-4 h-16 max-h-16 overflow-hidden py-3">
+                            <h3 class="font-semibold hover:underline text-gray-800">
+                                At vero eos et accusamus et iusto odio
+                            </h3>
+                        </div>
+                        <div class="flex items-center mt-7 px-4 justify-between">
+                            <small>11 Februari, 2021</small>
+                            <div class="flex justify-end">
+                                <a class="px-2 py-1 hover:bg-gray-800 bg-gray-700 text-white text-xs rounded-xl"
+                                    href="#">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-80 w-72 bg-white shadow-lg">
+                        <img class="object-cover w-full h-48" src="img/event3.jpg" alt="">
+                        <div class="px-4 h-16 max-h-16 overflow-hidden py-3">
+                            <h3 class="font-semibold hover:underline text-gray-800">
+                                On the other hand, we denounce with righteous indignation
+                            </h3>
+                        </div>
+                        <div class="flex items-center mt-7 px-4 justify-between">
+                            <small>10 January, 2021</small>
+                            <div class="flex justify-end">
+                                <a class="px-2 py-1 hover:bg-gray-800 bg-gray-700 text-white text-xs rounded-xl"
+                                    href="#">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-gray-100 w-full">
+        <section class="container w-10/12 py-20 mx-auto flex flex-col md:flex-row justify-between">
+            <div class="w-full md:w-2/12">
+                <h3 class="md:text-5xl ml-3 md:ml-0 -mb-8 text-3xl font-bold text-gray-800 ">News</h3>
+            </div>
+            <div class="w-full md:w-10/12">
+                <div class="flex justify-end md:-mr-5"><a
+                        class="md:px-4 md:py-2 px-3 py-2 mr-2 md:mr-0 rounded-2xl mb-6 hover:bg-blue-600 text-white text-xs md:text-sm bg-blue-500"
+                        href="/news">Lihat semua</a>
+                </div>
+                <div class="flex mt-0 md:mt-6 justify-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="h-80 bg-white w-72 shadow-lg">
+                            <img class="object-cover w-full h-48" src="img/news1.jpg" alt="">
+                            <div class="px-4 h-16 max-h-16 overflow-hidden py-3">
+                                <h3 class="font-semibold hover:underline text-gray-800">
+                                    <a href="#">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae enim quisquam
+                                        accusantium?
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="flex items-center mt-7 px-4 justify-between">
+                                <small class="text-xs">Written on : 5 hours ago </small>
+                                <div class="flex justify-end">
+                                    <a class="px-2 py-1 hover:bg-gray-800 bg-gray-700 text-white text-xs rounded-xl"
+                                        href="#">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-80 bg-white w-72 shadow-lg">
+                            <img class="object-cover w-full h-48" src="img/news2.jpg" alt="">
+                            <div class="px-4 h-16 max-h-16 overflow-hidden py-3">
+                                <h3 class="font-semibold hover:underline text-gray-800">
+                                    <a href="/news/{{ $item->id }}">
+                                        There are many variations of passages of Lorem Ipsum
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="flex items-center mt-7 px-4 justify-between">
+                                <small class="text-xs">Written on : 2 weeks ago</small>
+                                <div class="flex justify-end">
+                                    <a class="px-2 py-1 hover:bg-gray-800 bg-gray-700 text-white text-xs rounded-xl"
+                                        href="#">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-80 bg-white w-72 shadow-lg">
+                            <img class="object-cover w-full h-48" src="img/news3.jpg" alt="">
+                            <div class="px-4 h-16 max-h-16 overflow-hidden py-3">
+                                <h3 class="font-semibold hover:underline text-gray-800">
+                                    <a href="#">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="flex items-center mt-7 px-4 justify-between">
+                                <small class="text-xs">Written on : 1 month ago</small>
+                                <div class="flex justify-end">
+                                    <a class="px-2 py-1 hover:bg-gray-800 bg-gray-700 text-white text-xs rounded-xl"
+                                        href="/news/{{ $item->id }}">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Us -->
+    <div class="w-full py-12 bg-white">
+        <section class="container w-11/12 md:w-10/12 pt-16 pb-24 mx-auto justify-center ">
+
+            <div class="grid grid-cols-1 gap-8 gap-y-20 md:grid-cols-2">
+                <div class="flex order-1 items-center">
+                    <img data-aos="fade-right" data-aos-duration="1000" id="big-image" class="w-11/12 mx-auto"
+                        src="img/undraw4.svg" alt="">
+                </div>
+                <div class="order-2 text-center md:text-left">
+                    <h3 class="text-6xl font-black text-gray-800">About Us</h3>
+                    <div class="text-gray-700">
+                        <div class="my-8 w-full leading-7 mx-auto">
+                            <p>Ecodigi adalah komunitas yang berfokus pada pengembangan UMKM dalam era digitalisasi.
+                                Ecodigi sebagai platform dalam memberikan pelatihan, pembentukan talenta, dan edukasi
+                                kepada masyarakat secara umum dan para pelaku usaha secara khusus agar dapat mengikuti
+                                perkembangan ekonomi melalui digital. Ecodigi bertujuan dalam memberikan kontribusi
+                                terhadap kemajuan ekonomi nasional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-4 my-8 md:order-3">
+                    <div class="flex space-y-5 text-gray-700 flex-col">
+                        <h3
+                            class="text-4xl text-center md:text-left mb-6 font-black mx-auto md:mx-0 w-7/12 border-b-2 border-gray-600 py-4 text-gray-800">
+                            Visi & Misi</h3>
+                        <div
+                            class="bg-gray-100 mb-6 lg:mb-0 shadow-md h-auto lg:h-44 w-full p-7 hover:bg-blue-300 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center justify-between">
+                                <h1 class="mb-3 text-2xl font-bold">Visi</h1>
+                                <div class="flex -mt-5 items-center">
+                                    <svg width="42" height="32" viewBox="0 0 77 67" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M61.495 66.1284H0V4.63239H41.729V6.09739H1.46402V64.6644H60.031V35.3804H61.495V66.1284Z"
+                                            fill="#000" />
+                                        <path
+                                            d="M30.4309 50.0881C29.0098 45.8919 11.1889 31.6281 22.1091 29.2307L31.0643 41.1714L72.2365 0L76.3775 4.14087L30.4309 50.0881Z"
+                                            fill="#3B82F6" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Menjadi komunitas handal dan terpercaya di Indonesia sebagai wadah pengembangan
+                                skills bagi para
+                                pelaku usaha dalam bidang ekonomi digital</p>
+                        </div>
+                        <div
+                            class="bg-gray-100 mb-6 lg:mb-0 shadow-md h-auto lg:h-44 w-full p-7 hover:bg-blue-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
+                            <div class="flex items-center justify-between">
+                                <h1 class="mb-3 text-2xl font-bold">Misi</h1>
+                                <div class="flex -mt-5 items-center">
+                                    <svg width="42" height="32" viewBox="0 0 77 67" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M61.495 66.1284H0V4.63239H41.729V6.09739H1.46402V64.6644H60.031V35.3804H61.495V66.1284Z"
+                                            fill="#000" />
+                                        <path
+                                            d="M30.4309 50.0881C29.0098 45.8919 11.1889 31.6281 22.1091 29.2307L31.0643 41.1714L72.2365 0L76.3775 4.14087L30.4309 50.0881Z"
+                                            fill="#3B82F6" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Menjadi platform yang terintegritas dan aksesible untuk kemajuan ekonomi digitall</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex order-3 md:4">
+                    <img data-aos="fade-left" data-aos-duration="1000" id="big-image" class="w-full mx-auto"
+                        src="img/undraw.svg" alt="">
+                </div>
+                <div class="flex order-5">
+                    <img data-aos="fade-right" data-aos-duration="1000" id="big-image" class="w-full mx-auto"
+                        src="img/undraw2.svg" alt="">
+                </div>
+                <div class="order-6">
+                    <div class="flex space-y-5 text-gray-700 flex-col">
+                        <h3
+                            class="text-4xl text-center md:text-left my-4 mx-auto md:mx-0 font-black border-b-2 border-gray-600 py-4 w-7/12 text-gray-800">
+                            Challenge</h3>
+                        <div
+                            class="bg-gray-100 mb-6 lg:mb-0 shadow-md h-auto lg:h-44 w-full p-7 hover:bg-blue-300 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center justify-between">
+                                <h1 class="mb-3 text-gray-800 text-4xl font-black">1</h1>
+                                <div class="flex -mt-5 items-center">
+                                    <svg width="31" height="39" viewBox="0 0 51 59" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.967067 56.5605C0.559589 56.0451 0.275081 55.4435 0.135219 54.8016C-0.00464307 54.1596 0.00385192 53.4942 0.159999 52.856C3.88957 37.2338 3.88957 20.953 0.159999 5.33082C0.00385259 4.69261 -0.00464301 4.0272 0.135219 3.38523C0.275081 2.74326 0.55959 2.14167 0.967067 1.62626C1.36576 1.11779 1.87525 0.707024 2.45669 0.425208C3.03813 0.143391 3.67622 -0.00202827 4.32235 2.13694e-05H44.1949C45.2137 0.00207482 46.1987 0.365587 46.9746 1.02587C47.7505 1.68615 48.267 2.60035 48.432 3.60572C51.0329 20.498 51.0329 37.6888 48.432 54.5811C48.267 55.5864 47.7505 56.5006 46.9746 57.1609C46.1987 57.8212 45.2137 58.1847 44.1949 58.1868H4.32235C3.67622 58.1888 3.03813 58.0434 2.45669 57.7616C1.87525 57.4798 1.36576 57.069 0.967067 56.5605Z"
+                                            fill="#3B82F6" />
+                                        <path
+                                            d="M36.1723 21.895H15.249C14.4536 21.8942 13.691 21.5778 13.1286 21.0154C12.5662 20.453 12.2498 19.6904 12.249 18.895V17.7227C12.2498 16.9273 12.5662 16.1647 13.1286 15.6023C13.691 15.0399 14.4536 14.7235 15.249 14.7227H36.1723C36.9677 14.7235 37.7302 15.0399 38.2927 15.6023C38.8551 16.1647 39.1714 16.9273 39.1723 17.7227V18.895C39.1714 19.6904 38.8551 20.453 38.2927 21.0154C37.7302 21.5778 36.9677 21.8942 36.1723 21.895V21.895Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Kurangnya pelatihan kepada masyarakat awam, terkait bagaimana cara memanfaatkan
+                                fitur-fitur digital dalam pengembangan usaha mereka.</p>
+                        </div>
+                        <div
+                            class="bg-gray-100 mb-6 lg:mb-0 shadow-md h-auto w-full p-7 hover:bg-blue-300 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center justify-between">
+                                <h1 class="mb-3 text-gray-800 text-4xl font-black">2</h1>
+                                <div class="flex -mt-5 items-center">
+                                    <svg width="31" height="39" viewBox="0 0 52 60" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.01768 57.4903C0.603463 56.9663 0.314249 56.3547 0.172038 55.7021C0.0298265 55.0495 0.038378 54.3731 0.197032 53.7243C3.98823 37.8455 3.98813 21.2971 0.196727 5.41836C0.0382053 4.76952 0.02974 4.09307 0.172007 3.44048C0.314275 2.78789 0.603511 2.17635 1.01771 1.65237C1.42308 1.13573 1.94096 0.718359 2.53193 0.432028C3.12291 0.145697 3.7714 -0.00204317 4.42808 2.13424e-05H44.9553C45.9909 0.0019654 46.9922 0.371406 47.7809 1.04256C48.5696 1.71372 49.0945 2.64302 49.262 3.66497C51.9057 20.8347 51.9057 38.308 49.262 55.4777C49.0944 56.4997 48.5696 57.429 47.7809 58.1002C46.9922 58.7713 45.9909 59.1407 44.9553 59.1427H4.42808C3.77139 59.1447 3.12288 58.997 2.5319 58.7107C1.94093 58.4243 1.42304 58.0069 1.01768 57.4903V57.4903Z"
+                                            fill="#3B82F6" />
+                                        <path
+                                            d="M37.1347 21.8218H15.7853C14.99 21.8209 14.2274 21.5046 13.665 20.9421C13.1026 20.3797 12.7862 19.6172 12.7853 18.8218V17.5479C12.7862 16.7525 13.1026 15.9899 13.665 15.4275C14.2274 14.8651 14.99 14.5487 15.7853 14.5479H37.1347C37.9301 14.5487 38.6926 14.8651 39.2551 15.4275C39.8175 15.9899 40.1338 16.7525 40.1347 17.5479V18.8218C40.1338 19.6172 39.8175 20.3797 39.2551 20.9421C38.6926 21.5046 37.9301 21.8209 37.1347 21.8218V21.8218Z"
+                                            fill="white" />
+                                        <path
+                                            d="M37.1347 34.3691H15.7853C14.99 34.3683 14.2274 34.0519 13.665 33.4895C13.1026 32.9271 12.7862 32.1645 12.7853 31.3691V30.0952C12.7862 29.2998 13.1026 28.5373 13.665 27.9749C14.2274 27.4124 14.99 27.0961 15.7853 27.0952H37.1347C37.9301 27.0961 38.6926 27.4124 39.2551 27.9749C39.8175 28.5373 40.1338 29.2998 40.1347 30.0952V31.3691C40.1338 32.1645 39.8175 32.9271 39.2551 33.4895C38.6926 34.0519 37.9301 34.3683 37.1347 34.3691V34.3691Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Talenta yang belum matang secara pengalaman sehingga diperlukan arahan dan bimbingan
+                                untuk mengembangkan skill para pelaku usaha.</p>
+                        </div>
+                        <div
+                            class="bg-gray-100 mb-6 lg:mb-0 shadow-md h-auto w-full p-7 pb-9 hover:bg-blue-300 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center justify-between">
+                                <h1 class="mb-3 text-gray-800 text-4xl font-black">3</h1>
+                                <div class="flex -mt-5 items-center">
+                                    <svg width="31" height="59" viewBox="0 0 52 59" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.64821 57.1783C1.24068 56.6628 0.956152 56.0611 0.816239 55.4191C0.676325 54.777 0.684742 54.1115 0.840836 53.4732C4.57046 37.851 4.57035 21.5702 0.840531 5.94799C0.684562 5.30964 0.676215 4.64415 0.816178 4.0021C0.95614 3.36005 1.2407 2.75837 1.64821 2.24285C2.04702 1.73456 2.55653 1.32393 3.13795 1.04223C3.71938 0.760524 4.35743 0.615176 5.00349 0.617209H44.8757C45.8945 0.619119 46.8797 0.982598 47.6556 1.6429C48.4315 2.30321 48.9479 3.21746 49.1128 4.22289C51.7137 21.1151 51.7137 38.306 49.1128 55.1983C48.9479 56.2037 48.4315 57.1179 47.6556 57.7783C46.8797 58.4386 45.8945 58.802 44.8757 58.8039H5.00349C4.35743 58.806 3.71938 58.6606 3.13795 58.3789C2.55653 58.0972 2.04702 57.6866 1.64821 57.1783V57.1783Z"
+                                            fill="#3B82F6" />
+                                        <path
+                                            d="M36.6747 20.0435H15.7514C14.956 20.0426 14.1935 19.7262 13.631 19.1638C13.0686 18.6014 12.7523 17.8388 12.7514 17.0435V15.8711C12.7523 15.0757 13.0686 14.3132 13.631 13.7507C14.1935 13.1883 14.956 12.872 15.7514 12.8711H36.6747C37.4701 12.872 38.2327 13.1883 38.7951 13.7507C39.3575 14.3132 39.6739 15.0757 39.6747 15.8711V17.0435C39.6739 17.8388 39.3575 18.6014 38.7951 19.1638C38.2327 19.7262 37.4701 20.0426 36.6747 20.0435Z"
+                                            fill="white" />
+                                        <path
+                                            d="M36.6747 34.8569H15.7514C14.956 34.8561 14.1935 34.5397 13.631 33.9773C13.0686 33.4149 12.7523 32.6523 12.7514 31.8569V30.6846C12.7523 29.8892 13.0686 29.1266 13.631 28.5642C14.1935 28.0018 14.956 27.6854 15.7514 27.6846H36.6747C37.4701 27.6854 38.2327 28.0018 38.7951 28.5642C39.3575 29.1266 39.6739 29.8892 39.6747 30.6846V31.8569C39.6739 32.6523 39.3575 33.4149 38.7951 33.9773C38.2327 34.5397 37.4701 34.8561 36.6747 34.8569Z"
+                                            fill="white" />
+                                        <path
+                                            d="M36.6747 49.6704H15.7514C14.956 49.6695 14.1935 49.3532 13.631 48.7908C13.0686 48.2284 12.7523 47.4658 12.7514 46.6704V45.498C12.7523 44.7027 13.0686 43.9401 13.631 43.3777C14.1935 42.8153 14.956 42.4989 15.7514 42.498H36.6747C37.4701 42.4989 38.2327 42.8153 38.7951 43.3777C39.3575 43.9401 39.6739 44.7027 39.6747 45.498V46.6704C39.6739 47.4658 39.3575 48.2284 38.7951 48.7908C38.2327 49.3532 37.4701 49.6695 36.6747 49.6704V49.6704Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <p>Minimnya edukasi kepada para pelaku usaha dalam menciptakan produk yang inovatif dan
+                                kreatif.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+    <section class="py-12 w-full bg-gray-900 mx-auto ">
+        <div class="container md:w-10/12 w-11/12 bg-gray-900 rounded-3xl px-4 py-12 mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-100">Contact Us!</h1>
+                <p class="text-gray-300 my-5">Any question ? Just write us a message!</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex text-gray-400 text-xs md:text-base space-x-6 md:justify-between">
+                    <a target="_blank" href="https://www.instagram.com/ecodigi.id/">
+                        <div
+                            class="flex flex-col justify-center rounded-xl hover:text-white hover:bg-blue-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-24 md:w-36 lg:w-52 p-3 md:p-5 items-center">
+                            <img class="w-6 md:w-8 lg:w-10" src="img/instagram-white.svg" alt="">
+                            <p class="mt-4">@ecodigi.id</p>
+                        </div>
+                    </a>
+                    <a href="mailto:ecodigi1@gmail.com">
+                        <div
+                            class="flex flex-col justify-center rounded-xl hover:text-white hover:bg-blue-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-24 md:w-36 lg:w-52 p-3 md:p-5 items-center">
+                            <img class="w-6 md:w-8 lg:w-10" src="img/envelope-white.png" alt="">
+                            <p class="mt-4">ecodigi1@gmail.com</p>
+                        </div>
+                    </a>
+                    <a onclick="return false;" href="">
+                        <div
+                            class="flex flex-col justify-center rounded-xl hover:text-white hover:bg-blue-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-24 md:w-36 lg:w-52 p-3 md:p-5 items-center">
+                            <img class="w-6 md:w-8 lg:w-10" src="img/call.png" alt="">
+                            <p class="mt-4">+62812345678</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white mt-6 rounded-2xl p-6 md:p-10 w-full md:w-10/12 mx-auto">
+                <p class="text-xl font-medium text-gray-800 mb-2">Contact Form</p>
+                <hr>
+                <form method="POST" action="/contact">
+                    <div
+                        class="flex flex-col mt-2 lg:flex-row text-gray-800 lg:space-y-0 space-y-4 lg:space-x-8 lg:justify-between">
+                        <div class="w-full lg:w-1/2">
+                            <div>
+                                <label class="font-medium" for="name">Name</label>
+                                <input name="nama" placeholder="Your name"
+                                    class="w-full mt-2 p-2 bg-white rounded-lg border-gray-300 border-2 focus:outline-none focus:border-blue-600"
+                                    type="text">
+                            </div>
+                            <div class="my-3">
+                                <label class="font-medium" for="email">Email</label>
+                                <input name="email" placeholder="example@gmail.com"
+                                    class="w-full mt-2 p-2 bg-white rounded-lg border-gray-300 border-2 focus:outline-none focus:border-blue-600"
+                                    type="email">
+                            </div>
+                            <div>
+                                <label class="font-medium" for="nohp">Phone Number (optional)</label>
+                                <input name="nohp" placeholder="0812xxxxxx"
+                                    class="w-full mt-2 p-2 bg-white rounded-lg border-gray-300 border-2 focus:outline-none focus:border-blue-600"
+                                    type="number">
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <div>
+                                <label class="font-medium" for="pesan">Message</label>
+                                <textarea placeholder="Enter your message here ..."
+                                    class="w-full h-28 lg:h-56 p-2 mt-2 bg-white rounded-lg focus:outline-none border-gray-300 focus:border-blue-600 border-2"
+                                    name="pesan" id=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-4 justify-end text-sm items-center">
+                        <button
+                            class="focus:outline-none p-3 w-full lg:w-36 font-semibold rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition duration-300 ease-in-out"
+                            type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 h-auto md:h-64 w-full">
+        <div class="container flex-row md:flex justify-between py-12 w-11/12 md:w-10/12 mx-auto">
+            <div class="flex justify-between md:block">
+                <div>
+                    <div class="flex items-center">
+                        <a href="/">
+                            <img class="w-40" src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <p class="text-sm mt-7 md:text-base">We’re taking you to explore the world <br> of economy in one
+                        touch!</p>
+                </div>
+            </div>
+
+            <div class="my-8 md:my-0">
+                <p class="text-xl md:text-2xl font-semibold mb-5">Quick links</p>
+                <div class="grid h-24 grid-cols-2 mr-16 gap-x-4 gap-y-4 md:gap-y-6 text-sm">
+                    <div><a class="hover:text-blue-700 transition duration-500 ease-in-out" href="#">| Home</a></div>
+                    <div><a class="hover:text-blue-700 transition duration-500 ease-in-out" href="#">| Events</a>
+                    </div>
+                    <div><a class="hover:text-blue-700 transition duration-500 ease-in-out" href="#">| News</a>
+                    </div>
+                    <div><a class="hover:text-blue-700 transition duration-500 ease-in-out" href="#">|
+                            Members</a></div>
+                    <div><a class="hover:text-blue-700 transition duration-500 ease-in-out" href="#">| About</a>
+                    </div>
+                    <div><a class="hover:text-blue-700 transition duration-500 ease-in-out" href="#">|
+                            Contact</a></div>
+                </div>
+            </div>
+
+
+            <div class="md:block flex flex-col justify-between">
+                <h1 class="mb-6 font-semibold md:mb-8 text-xl md:text-2xl">Get in touch</h1>
+                <div>
+                    <small><a class="hover:text-blue-600"
+                            href="mailto:ecodigi1@gmail.com">ecodigi1@gmail.com</a></small>
+                    <div class="flex mt-2 -ml-1">
+                        <a onclick="return false;" href=""><img
+                                class="hover:bg-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 p-1 h-10 rounded-md"
+                                src="img/facebook.svg" alt="" srcset=""></a>
+                        <a target="_blank" href="https://www.instagram.com/ecodigi.id/"><img
+                                class="hover:bg-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 p-1 h-10 mx-5 rounded-md"
+                                src="img/instagram.svg" alt="" srcset=""></a>
+                        <a onclick="return false;" href=""><img
+                                class="hover:bg-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 p-1 h-10 rounded-md"
+                                src="img/twitter.svg" alt="" srcset=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex items-center justify-center text-center h-12 text-gray-400 bg-gray-900 border-t-2 border-gray-800">
+            <p class="text-sm md:text-md my-6">Copyright © 2021 Ecodigi</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger-button')
+        const nav = document.querySelector('#nav-mobile')
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('hidden')
+        })
+    </script>
+</body>
+
+</html>
