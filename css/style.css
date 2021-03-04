@@ -1,0 +1,105 @@
+ .link-active {
+     color: rgb(75, 85, 99);
+ }
+
+ .pagination{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ 
+ .active .page-link{
+     color: #fff;
+     background-color: #2563eb;
+ }
+
+ .disabled .page-link{
+     color: #CBD5E1;
+ }
+
+ .page-item a, span{
+     font-family: 'Poppins', sans-serif;
+     padding: 5px 13px;
+     border: 1px solid #CBD5E1;
+     margin: 5px 0 5px 0;
+     display: inline-block;
+ }
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+
+ @media (min-width: 1400px) {
+     #big-image {
+         max-width: 52rem;
+         height: auto;
+         padding-top: 2.5rem;
+     }
+     #header {
+         height: 31rem;
+     }
+
+     #big-title {
+         font-size: 5rem;
+         margin-bottom: 5rem;
+         padding-top: 1.5rem;
+     }
+
+ }
+
+ @media (min-width: 1600px) {
+     #header {
+         height: 33.5rem;
+     }
+
+     #big-title {
+         font-size: 6.3rem;
+         margin-bottom: 5rem;
+         padding-top: 1.5rem;
+     }
+     .card {
+         width: 23rem;
+         height: 20rem;
+     }
+     .show-cover {
+         height: 35rem;
+     }
+     #about-us {
+         width: 80%;
+         margin: 3rem 0 0 4rem;
+     }
+
+     #contact-form {
+         width: 60%;
+     }
+     #banner-text {
+         width: 68%;
+     }
+ }
+
+ @media (min-width: 1800px) {
+     .card {
+         width: 26rem;
+         height: 24rem;
+     }
+     .card-image {
+         height: 16rem;
+     }
+
+     .side-card {
+         width: 24rem;
+         height: 21rem;
+     }
+
+     .side-image {
+         height: 13rem;
+     }
+
+     #header {
+         height: 35rem;
+     }
+
+     #banner-text {
+         width: 60%;
+     }
+ }
